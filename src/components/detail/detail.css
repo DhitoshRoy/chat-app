@@ -1,0 +1,111 @@
+
+.detail{
+
+    width: 70%;
+    
+
+    /* flex:1; */
+
+.user{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    border-bottom: 1px solid #dddddd35;
+
+    img{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}   
+    .info{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+
+        .option{
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content:space-between ;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background-color:rgb(17, 25, 40, 0.3);
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+            }
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 5px;
+
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetail{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        img{
+
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        span{
+
+                            font-size: 15px;
+                            color: lightgray;
+                            font-weight: 300;
+                        }
+                    }
+                    .icon{
+
+                        width: 30px;
+                        height: 30px;
+                        background-color: rgba(17,25,40, 0.3);
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+        button{
+            padding: 5px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+
+                background-color: rgba(17, 25, 40, 0.355);
+            }
+            &.logout{
+                padding: 5px;
+                background-color: #1a73e8;
+            }
+
+        }
+
+    }
+}
