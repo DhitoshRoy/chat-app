@@ -1,16 +1,15 @@
-import { getDownloadURL, uploadBytesResumable } from "firebase/storage";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { Storage } from "./firebase";
 
 const upload = async (file) =>{
      const date = new Date()
 
-    const storageRef = ref(storage, `images/${date + file.name}`);
+    const storageRef = ref(Storage, `images/${date + file.name}`);
 
     const uploadTask = uploadBytesResumable(storageRef, file);
 
     return new Promise((resolve, reject)=>{
 
-        
         uploadTask.on('state_changed',
         (snapshot) => {
             const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
@@ -29,4 +28,4 @@ const upload = async (file) =>{
 
 }
 
-export default upload
+export default upload;

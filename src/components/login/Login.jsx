@@ -141,9 +141,7 @@ const Login = () => {
 
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
-
       const imgUrl = await upload(avatar.file)
-
       await setDoc(doc(db, "users", res.user.uid), {
         username,
         email,
@@ -159,6 +157,7 @@ const Login = () => {
       toast.success("Account created! You can login now.");
     } catch (err) {
       toast.error(`Error: ${err.message}`);
+      console.log("error while registered", err);
     } finally{
         setLoading(false);
     }
@@ -173,7 +172,7 @@ const Login = () => {
 
     try{
 
-        await signInWithEmailAndPassword(auth,email,password)
+        await signInWithEmailAndPassword(auth, email, password)
     }catch(err){
         console.log(err);
         toast.error(err.message)
@@ -187,11 +186,11 @@ const Login = () => {
   return (
     <div className="login">
         <div className="item">
-            <h2>Welcome back!</h2>
+            <h2> Welcome back ! </h2>
             <form onSubmit={handleLogin}>
             <input type="text" placeholder="Email" name="email" />
             <input type="password" placeholder="Password" name="password" />
-            <button disabled={loading}>{loading ? "loading " : "Sign In"}</button>
+            <button disabled={loading}>{loading ? "loading " : "Sign in"}</button>
             </form>
       </div>
 
@@ -208,7 +207,7 @@ const Login = () => {
                 <input type="text" placeholder="Username" name="username" required />
                 <input type="email" placeholder="Email" name="email" required />
                 <input type="password" placeholder="Password" name="password" required />
-                <button disabled={loading}>{loading ? "loading " : "Sign Up"}</button>
+                <button disabled={loading}>{loading ? "loading " : "Sign Up"} </button>
 
             </form>
         </div>
