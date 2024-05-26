@@ -8,14 +8,14 @@ const Detail =()=>{
         <div className="detail"> 
             <div className="user">
                 <img src="./avatar.png" alt="" />
-                <h3>name one</h3>
-                <p>Lorem ipsum dolor sit</p>
+                <h3>jen</h3>
+                <p>something</p>
             </div>
 
             <div className="info">
                 <div className="option">
                     <div className="title">
-                        <span>chat setting</span>
+                        <span>chat settings</span>
                         <img src="./arrowUp.png" alt="" />
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Detail =()=>{
                     </div>
                 </div>
                 <button>Block user</button>
-                <button className="logout" onClick={()=>auth.signOut()}>Logout</button>
+                <button className="logout" onClick={()=> auth.signOut()}>Logout</button>
             </div>
         </div>
 
@@ -76,3 +76,5 @@ const Detail =()=>{
 };
 
 export default Detail
+
+

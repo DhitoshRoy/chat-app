@@ -27,7 +27,7 @@ const handleEmoji =e =>{
                 <div className="user">
                     <img src="./avatar.png" alt="" />
                     <div className="texts">
-                        <span>name one</span>
+                        <span>jen</span>
                         <p> something</p>
                     </div>
                     <div ref={endRef}></div>
@@ -61,7 +61,7 @@ const handleEmoji =e =>{
                             
                         </p>
 
-                        <span>1 min ago </span>
+                        <span>2 min ago </span>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ const handleEmoji =e =>{
                             
                         </p>
 
-                        <span>1 min ago </span>
+                        <span>2 min ago </span>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@ const handleEmoji =e =>{
 
                         <p> I am at home.
                         </p>
-                        <span>1 min ago </span>
+                        <span>2 min ago </span>
                     </div>
 
                 </div>
@@ -92,10 +92,10 @@ const handleEmoji =e =>{
                      <img src="./avatar.png" alt="" />
                     <div className="text">
 
-                        <p> How are you doing.
+                        <p> How are you doing?
 
                         </p>
-                        <span>1 min ago </span>
+                        <span>2 min ago </span>
                     </div>
 
                 </div>
@@ -145,3 +145,5 @@ const handleEmoji =e =>{
 }
 
 export default Chat 
+
+

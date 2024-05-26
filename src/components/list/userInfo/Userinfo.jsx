@@ -3,7 +3,7 @@ import "./userInfo.css"
 import { useUserStore } from "../../../../Lib/userStore";
 
 
-const Userinfo =() => {
+const Userinfo = () => {
 
     const {currentUser} = useUserStore();
 

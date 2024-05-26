@@ -165,7 +165,7 @@ const Login = () => {
 
   const handleLogin = async(e) => {
     e.preventDefault();
-    setLoading(true);
+    setLoading(false);
 
     const formData = new FormData(e.target);
     const { email, password } = Object.fromEntries(formData);
@@ -186,7 +186,7 @@ const Login = () => {
   return (
     <div className="login">
         <div className="item">
-            <h2> Welcome back ! </h2>
+            <h2>Welcome Back ! </h2>
             <form onSubmit={handleLogin}>
             <input type="text" placeholder="Email" name="email" />
             <input type="password" placeholder="Password" name="password" />

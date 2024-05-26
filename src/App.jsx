@@ -26,8 +26,7 @@ const App = () => {
   },[fetchUserInfo]);
 
 
-
-  if(isLoading) return <div className="loading"> Loading... </div>
+  if(isLoading) return <div className="loading"> Loading please wait a while.. </div>
 
   return (
     <div className="container">
